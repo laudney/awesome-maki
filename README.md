@@ -1,5 +1,7 @@
 # Awesome Maki [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
+<a href="https://maki.sh"><img src="https://raw.githubusercontent.com/tontinton/maki/main/site/android-chrome-512x512.png" alt="Maki logo" align="right" width="144"></a>
+
 > [Maki](https://github.com/tontinton/maki) is an AI coding agent with a Lua extension API, built for efficient use of context tokens.
 
 > [!IMPORTANT]
