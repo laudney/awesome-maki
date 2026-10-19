@@ -32,7 +32,7 @@ The same criteria apply to the maintainer's own projects. We prefer a short, use
 
 ## Agent Workflows
 
-- [laudney/maki-essential-plugins](https://github.com/laudney/maki-essential-plugins) - Keep an agent working toward a persistent goal, monitor background commands, and switch between saved provider logins with `/provider`. Uses `maki.pack.add`; requires Maki 0.6.0+. Optional RunInfra model discovery requires 0.6.3+ and explicit provider selection.
+- [laudney/maki-essential-plugins](https://github.com/laudney/maki-essential-plugins) - Keep an agent working toward a persistent goal, monitor background commands, and switch between saved provider logins with `/provider`. Uses `maki.pack.add`; requires Maki 0.6.0+. Optional RunInfra and Fireworks AI discovery uses the providers' own model APIs; requires Maki 0.6.3+, an API key, and explicit provider selection.
 
 ## Web Search
 

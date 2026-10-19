@@ -59,6 +59,12 @@ The remaining projects may be useful, but their current evidence is not enough f
 
 The g4bwy collection, browser module, and snippets need manual installation. The sdroege collection contains separate package directories, but its example `maki.pack.add` URLs contain `<owner>` placeholders for separate repositories. Do not copy those URLs or treat the collection root as a ready-to-load package. Follow the relevant directory's manual layout and Maki's [package API](https://maki.sh/docs/lua-api/#maki-pack-add).
 
+### Essential provider discovery
+
+Follow-up checked on **2026-10-19** at essential-plugins commit [`b897f87`](https://github.com/laudney/maki-essential-plugins/commit/b897f870fe5fc3522fe401e115cd8d3eb15ef83e), using Maki **v0.6.4**. The package now supports optional RunInfra and Fireworks AI discovery through their own authenticated model APIs. Each provider requires Maki 0.6.3+, an API key, and an explicit `plugin = "maki-essential-plugins"` selection in `providers.toml`. The provider names are `runinfra` and `fireworks-ai`. See the package's [RunInfra setup](https://github.com/laudney/maki-essential-plugins#optional-runinfra-provider) and [Fireworks AI setup](https://github.com/laudney/maki-essential-plugins#optional-fireworks-ai-provider).
+
+Managed installation from GitHub and registration of both providers were verified. All **55 real-host runtime tests** passed against the local Maki source checkout at `a85c9f7c968361c56777e8f27c3f4839ad372959`; 15 cover Fireworks discovery, pagination, credentials, gateway paths, chat requests, and failures. These tests use local HTTP fixtures. The user also confirmed that Fireworks models appeared in the picker after a valid API key was saved. This does not establish live inference or model quality. Fields absent from discovery retain Maki's normal metadata fallback, including Models.dev.
+
 ### SearXNG permissions
 
 The selected websearch module reads `SEARXNG_URL` through `maki.uv.os_getenv`, which requires the `env` permission. Its README's install example grants only `net`. Add `env = true` alongside `net = true` in the config directory's manifest. The main entry states this correction explicitly. See the [reviewed source](https://github.com/g4bwy/maki-plugins/blob/a9eeaf1772e6641d41c3f5b65399a6324ba1aec9/websearch/init.lua) and [environment API](https://maki.sh/docs/lua-api/#maki-uv-os_getenv).
