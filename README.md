@@ -36,6 +36,7 @@ The same criteria apply to the maintainer's own projects. We prefer a short, use
 
 - [laudney/maki-essential-plugins](https://github.com/laudney/maki-essential-plugins) - Keep an agent working toward a persistent goal, monitor background commands, and switch between saved provider logins with `/provider`. Uses `maki.pack.add`; requires Maki 0.6.0+. Optional RunInfra and Fireworks AI discovery uses the providers' own model APIs; requires Maki 0.6.3+, an API key, and explicit provider selection.
 - [aidalgol/maki-specialist-subagents](https://github.com/aidalgol/maki-specialist-subagents) - Define review and implementation specialists, delegate to them in parallel or in the background, and skip reviews already recorded in a ledger. Uses `maki.pack.add`; requires Maki 0.7.0+ and requests `agent`, `run`, file, and `net` permissions. New in November 2026; unit tests cover the logic, and the author tests live delegation manually.
+- [MatthewScholefield/maki-loop](https://github.com/MatthewScholefield/maki-loop) - Repeat an objective in fresh sessions with `/loop`, keeping progress in a project file rather than carrying over the transcript. Uses `maki.pack.add`; checked on Maki 0.7.3. Requires Git, the build-mode TUI, and file, agent, and session permissions. No iteration or spending cap.
 
 ## Providers
 
