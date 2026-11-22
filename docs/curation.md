@@ -144,6 +144,10 @@ The API reference was [Maki v0.7.1](https://github.com/tontinton/maki/tree/v0.7.
 - **sdroege history and notes:** The README now states that both need unmerged Maki changes from [sdroege's `dev` branch](https://github.com/sdroege/maki/tree/dev). They can be reconsidered when those changes reach a Maki release.
 - **Subscription providers:** The Claude and Cursor subscription providers both depend on access that the provider does not support for third-party tools. This curation does not recommend them, whatever their code quality.
 
+## Follow-up: maki-loop
+
+Checked on **2026-11-23** at [`90e53b7`](https://github.com/MatthewScholefield/maki-loop/commit/90e53b7a845f66079b1cbc37219e289ee9a7163e) (MIT). Managed installation and `goal_complete` registration were checked on Maki 0.7.3; 255 LuaJIT tests passed against a simulated host. No live model loop was run. The project declares 0.5.7, which also installed and registered the tool, but that version does not recognize the agent and session grants or supply background-task wrapper metadata. The listing names the newer version checked, not a minimum. Headless modes are unsupported and neither loop mode caps iterations or spending.
+
 ## Licenses and future reviews
 
 No license was identified in the reviewed roots of `g4bwy/maki-plugins`, `sdroege/maki-plugins`, or `xqqmdy/maki-herdr-pane-title-sync`, or in the two gists. The 2026-11-08 follow-up found no license file in the `g4bwy/maki-plugins` or `sdroege/maki-plugins` roots either. `aidalgol/maki-specialist-subagents` uses REUSE-style SPDX headers with MIT and 0BSD texts under `LICENSES/`, which GitHub does not show as a repository license. This review links to those projects; it does not copy or relicense their code. Other reviewed licenses are available in the linked repositories.
